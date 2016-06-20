@@ -101,9 +101,19 @@ textarea {
 	 margin: 0; padding: 0;
 }
 
+#logo {
+transition: all 1s ease-out;
+}
+
+#logo:hover {
+transform: rotate(360deg);
+}
 
 body {
-  font-family: "Open sans", "san-serif";
+  /*  font-family: "Open sans", "san-serif"; */
+	font-family: 'Source Sans Pro', 'san-serif';
+	font-weight: 200;
+	line-height: 1;
   background-color: #fff;
   color: #333;
   max-width: 550px;
@@ -115,19 +125,22 @@ body {
 
 
 h1 {
-	font-family: "blambot-pro", serif;
-	font-size: 1.2em;
+	/* font-family: "blambot-pro", serif; */
+	font-size: 2.3rem;
+	font-weight: 200;
 }
+
 h2 {
-		font-size: 1.5em;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: .3em;
 	}
 
 h3 {
-	font-size: 1em;
+	font-size: 1rem;
 	width: 250px;
-	line-height: 1.2;
-  color: #999;
-  font-weight: 400;
+  color: #333;
+  font-weight: 200;
 }
 
 .header {
@@ -150,13 +163,14 @@ img {
 
 .header .text p {
   font-size: 1em;
+	font-weight: 400;
   margin-top: 1em;
   line-height: 1.2;
   width: 100%;
 }
 
 .footer {
-	font-size: .8em;
+	font-size: 1rem;
 	display: -webkit-flex;
 	display: flex;  justify-content: space-between;
   margin: 0em 1em;
@@ -178,7 +192,7 @@ hr {
 	@media (min-width: 450px) {
 
 		h1, h2 {
-			font-size: 1.6em;
+			font-size: 2em;
 		}
 
 		h3 {
@@ -227,7 +241,7 @@ hr {
 		}
 
 		.footer {
-			font-size: 1em;
+			font-size: 1.2em;
 		}
 
 		body {
