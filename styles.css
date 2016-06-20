@@ -102,15 +102,18 @@ textarea {
 }
 
 #logo {
-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 }
 
 #logo:hover {
-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
+a, a:visited, a:link, a:active, a:hover {
+	text-decoration: none;
+	color: #333;
+}
 body {
-  /*  font-family: "Open sans", "san-serif"; */
 	font-family: 'Source Sans Pro', 'san-serif';
 	font-weight: 200;
 	line-height: 1;
@@ -125,7 +128,6 @@ body {
 
 
 h1 {
-	/* font-family: "blambot-pro", serif; */
 	font-size: 2.3rem;
 	font-weight: 200;
 }
@@ -174,7 +176,7 @@ img {
 	display: -webkit-flex;
 	display: flex;  justify-content: space-between;
   margin: 0em 1em;
-  color: #999;
+  color: #333;
   div {
     flex: 1;
   }
