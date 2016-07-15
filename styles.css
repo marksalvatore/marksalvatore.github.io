@@ -2,11 +2,6 @@
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
-
-
-
- font-family: "fira-sans-2",sans-serif;
- font-family: "blambot-pro",sans-serif;
  */
 
 
@@ -90,6 +85,9 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -101,31 +99,29 @@ textarea {
 	 margin: 0; padding: 0;
 }
 
-
-
-
-
-/* add prefixes */
-
-#logo {
-	transition: all 1s ease-out;
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-#logo:hover {
+.logo {
+	float:left;
+  width: 60px;
+  height: 60px;
+  transition: all 1s ease-out;
+}
+
+.logo:hover {
 	transform: rotate(360deg);
 }
-
-
-
-
-
 
 a, a:visited, a:link, a:active, a:hover {
 	text-decoration: none;
 	color: #333;
 }
+
 body {
-	font-family: 'Source Sans Pro', 'san-serif';
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	line-height: 1;
   background-color: #fff;
@@ -137,35 +133,31 @@ body {
 	margin: 1em;
 }
 
-
 h1 {
-	font-size: 2.3rem;
-	font-weight: 200;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 2rem;
-	font-weight: 600;
-	margin-bottom: .3em;
-	}
+	color: #888;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-bottom: .2em;
+}
 
 h3 {
-	font-size: 1rem;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: .7rem;
 	width: 250px;
   color: #333;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .header {
 	display: -webkit-flex;
 	display: flex;
-}
-
-
-img {
-	float:left;
-  width: 60px;
-  height: 60px;
 }
 
 .header .text {
@@ -175,7 +167,7 @@ img {
 }
 
 .header .text p {
-  font-size: 1em;
+  font-size: .9em;
 	font-weight: 400;
   margin-top: 1em;
   line-height: 1.2;
@@ -183,9 +175,10 @@ img {
 }
 
 .footer {
-	font-size: 1rem;
+	font-size: .8em;
 	display: -webkit-flex;
-	display: flex;  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
   margin: 0em 1em;
   color: #333;
   div {
@@ -204,16 +197,22 @@ hr {
 	========================================================================== */
 	@media (min-width: 450px) {
 
-		h1, h2 {
+		h1 {
 			font-size: 2em;
 		}
 
+		h2 {
+			font-size: 1.5em;
+		}
+
 		h3 {
+			//color: #888;
 			font-size: 1em;
+			width: 100%;
 		}
 
 		.header .text p {
-		  font-size: 1.1em;
+		  font-size: 1em;
 		}
 
 		.footer {
@@ -235,13 +234,15 @@ hr {
 
 	@media (min-width: 600px) {
 
-		h1, h2 {
+		h1 {
 			font-size: 2.2em;
+		}
+		h2 {
+			font-size: 1.7em;
 		}
 
 		h3 {
-			font-size: 1.4em;
-			width: 400px;
+			font-size: 1.1em;
 		}
 
 		img {
@@ -250,11 +251,11 @@ hr {
 		}
 
 		.header .text p {
-		  font-size: 1.2em;
+		  font-size: 1em;
 		}
 
 		.footer {
-			font-size: 1.2em;
+			font-size: 1.1em;
 		}
 
 		body {
